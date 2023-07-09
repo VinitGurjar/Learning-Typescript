@@ -1,0 +1,25 @@
+{
+  "name": "learning-typescript",
+  "version": "1.0.0",
+  "description": "learning typescript",
+  "main": "index.ts",
+  "scripts": {
+    "test": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinitGurjar/Learning-Typescript.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Vinit Gurjar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinitGurjar/Learning-Typescript/issues"
+  },
+  "homepage": "https://github.com/VinitGurjar/Learning-Typescript#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
