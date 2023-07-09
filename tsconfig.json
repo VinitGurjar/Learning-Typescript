@@ -2,7 +2,7 @@
 {
     "compilerOptions": {
         "target": "esnext",
-        //Below option will recompile our code after we save it
+        //Below option will recompile our code after we save it write "tsc --watch"
         "lib": [
             "dom",
             "es2017"
