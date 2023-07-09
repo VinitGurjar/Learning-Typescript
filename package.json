@@ -21,5 +21,8 @@
   "homepage": "https://github.com/VinitGurjar/Learning-Typescript#readme",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195"
   }
 }
