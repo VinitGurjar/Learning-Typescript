@@ -1,5 +1,5 @@
 import * as _ from 'lodash';
-async function hello() {
+/*async function hello() {
     return 'world'
 }
 /*Type annotations code from now

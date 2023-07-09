@@ -3,7 +3,6 @@
     "compilerOptions": {
         "target": "esnext",
         //Below option will recompile our code after we save it
-        //"watch": true,
         "lib": [
             "dom",
             "es2017"
