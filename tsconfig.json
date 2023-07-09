@@ -1,0 +1,6 @@
+//automatically pickedup when we run tsc command
+{
+    "compilerOptions": {
+        "target": "esnext",
+    }
+}
