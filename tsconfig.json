@@ -1,6 +1,12 @@
-//automatically pickedup when we run tsc command
+//automatically pickeup when we run tsc command
 {
     "compilerOptions": {
         "target": "esnext",
+        //Below option will recompile our code after we save it
+        //"watch": true,
+        "lib": [
+            "dom",
+            "es2017"
+        ] //automatically include typings for certain enviorment such as dom or ES 2017
     }
 }
