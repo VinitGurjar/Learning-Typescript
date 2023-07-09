@@ -12,14 +12,20 @@ async function hello() {
 type Style = 'bold' | 'italic' | 23;
 //annoting Style type >
 let font: Style;
+/* Interfaces:- To enforce the shape of an object used to strong type objects*/
 
-//Creating object 
-const person = {
+interface Person {
+    firstName: string;
+    lastName: string;
+}
+
+//Creating object  
+const person: Person = {
     firstName: 'John',
     lastName: 'XXX'
 }
 
-const person2 = {
+const person2: Person = {
     firstName: 'ksks',
     lastName: 'X7fX'
 }
