@@ -33,8 +33,9 @@ const person2: Person = {
 //Functions
 //string is the return type of the function
 
-function pow(x: number, y: number): string {
-    return Math.pow(x, y).toString();
+function pow(x: number, y: number): void {
+    //Sometimes we have functions that don't return a value so we can use void as return type of function
+    Math.pow(x, y).toString();
 }
 
 pow(5, 10)
