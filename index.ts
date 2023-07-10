@@ -39,3 +39,12 @@ function pow(x: number, y: number): void {
 }
 
 pow(5, 10)
+
+// Arrays
+//We use types with bracket to signify its an array
+const arr: any[] = []
+arr.push(1)
+arr.push('2')
+arr.push(true)
+
+//Tuple
