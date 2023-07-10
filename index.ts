@@ -40,11 +40,14 @@ function pow(x: number, y: number): void {
 
 pow(5, 10)
 
-// Arrays
+// Arrays and Tuples:-
+//Tuple is an array with fixed length and fixed type for each value.
+let arr1: [string, number];
+type MyList = [number?, string?, boolean?]
+//Writen ? after type to make them optional
 //We use types with bracket to signify its an array
-const arr: any[] = []
+const arr: MyList = []
 arr.push(1)
 arr.push('2')
 arr.push(true)
 
-//Tuple
