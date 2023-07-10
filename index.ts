@@ -51,3 +51,19 @@ arr.push(1)
 arr.push('2')
 arr.push(true)
 
+// Generics:-
+//Generics are types which can hold/use multiple types
+//We use <> to signify that it is a generic type
+//We can use <T> to signify that it is a generic type
+function merge<T, U>(objA: T, objB: U) {
+    return Object.assign(objA, objB)
+}
+
+class Observable<T> {
+    constructor(public value: T) { }
+}
+
+let x: Observable<number>;
+
+
+
