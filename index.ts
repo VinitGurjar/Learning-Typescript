@@ -59,6 +59,40 @@ function greet(name?: string) {
 }
 greet(); // Prints: Hello, Anonymous!
 
+//Default Parameters
+/*function greet(name = 'Anonymous') {
+  console.log(`Hello, ${name}!`);
+}
+The function greet() can receive a string or undefined as its
+name parameter—if any other type is provided as an argument,
+TypeScript will consider that a type error.
+
+This is a cleaner way of getting the same functionality we had
+in the previous exercise. There, we used ? to mark the name parameter
+as optional. But parameters with default values don’t need a ? after their
+name, since assigning a default value already implies that they’re optional
+parameters.*/
+
+//Instead of writing optional parameter
+/*function proclaim(status?: string, repeat?: number) {
+  for (let i = 0; i < repeat || 0; i += 1) {
+    console.log(`I'm ${status || 'not ready...'}`);
+  }
+}*///Write this Deafualt one
+
+function proclaim(status= 'not ready...', repeat = 1) {
+  for (let i = 0; i < repeat ; i += 1) {
+    console.log(`I'm ${status}`);
+  }
+}
+
+proclaim();
+proclaim('ready?');
+proclaim('ready!', 3);
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 // Arrays and Tuples:-
 //Tuple is an array with fixed length and fixed type for each value.
 let arr1: [string, number];
