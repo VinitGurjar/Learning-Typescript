@@ -14,5 +14,32 @@
 let youAreAwesome: boolean;
 youAreAwesome = true;
 ```
+---
+
+### What is tsconfig.json file ?
+-Sometimes, you don’t want all the default rules that TypeScript is trying to enforce — and that’s fine. That’s one reason why providing a tsconfig.json file is useful. Additionally, you get perks like telling the TypeScript compiler what files to run on and more.
+
+-The tsconfig.json file is always placed in the root of your project and you can customize what rules you want the TypeScript compiler to enforce. Here’s an 
+eaxmple of tsconfig.json file.
+```json
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "strictNullChecks": true
+  },
+  "include": ["**/*.ts"]
+}
+```
+In the JSON, there are several properties:
+
+1. *"compilerOptions"*, which is a nested object that contains the rules for the TypeScript compiler to enforce.
+2. *"target"*, the value "es2017" means the project will be using the 2017 version of EcmaScript standards for JavaScript.
+3. *"module"*, this project will be using "commonjs" syntax to import and export modules.
+4. *"strictNullChecks"*, variables can only have null or undefined values if they are explicitly assigned those values.
+5. *"include"* that determines what files the compiler applies the rules to. In this case ["**/*.ts"] means the compiler should check every single file that has a .ts extension.
+
+
+
 
 
