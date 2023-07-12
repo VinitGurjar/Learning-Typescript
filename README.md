@@ -39,7 +39,26 @@ In the JSON, there are several properties:
 4. *"strictNullChecks"*, variables can only have null or undefined values if they are explicitly assigned those values.
 5. *"include"* that determines what files the compiler applies the rules to. In this case ["**/*.ts"] means the compiler should check every single file that has a .ts extension.
 
-
+### Parameter Type Annotations
+- In TypeScript, function parameters may be given type annotations with the same syntax as variable declarations: a colon next to the name. The type annotations ensure that the parameters are of the correct type:
+```typescript
+function greet(name: string) {
+  console.log(`Hello, ${name}!`);
+}
+ 
+greet('Katz'); // Prints: Hello, Katz  
+ 
+greet(1337); // Error: argument '1337' is not assignable to parameter of type 'string'
+```
+- Parameters that we do not provide type annotations for are assumed to be of type any—the same way variables are.
+```typescript
+function printKeyValue(key: string, value) {
+  console.log(`${key}: ${value}`);
+}
+ 
+printKeyValue('Courage', 1337); // Prints: Courage: 1337
+printKeyValue('Mood', 'scared'); // Prints: Mood: scared
+```
 
 
 
