@@ -32,13 +32,32 @@ const person2: Person = {
 
 //Functions
 //string is the return type of the function
-
+/*EXAMPLE-1*/
 function pow(x: number, y: number): void {
     //Sometimes we have functions that don't return a value so we can use void as return type of function
     Math.pow(x, y).toString();
 }
-
 pow(5, 10)
+
+/*EXAMPLE-2*/
+function triple(value: number) {
+  return value * 3;
+}
+
+function greetTripled(greeting: string, value: number) {
+  console.log(`${greeting}, ${triple(value)}!`);
+}
+
+greetTripled('Hiya', 5);
+//Optional parameter
+/*To indicate that a parameter is intentionally optional,
+we add a ? after its name. This tells TypeScript that the 
+parameter is allowed to be undefined and doesn’t always have to be provided.*/
+
+function greet(name?: string) {
+  console.log(`Hello, ${name|| 'Anonymous'}!`);
+}
+greet(); // Prints: Hello, Anonymous!
 
 // Arrays and Tuples:-
 //Tuple is an array with fixed length and fixed type for each value.
