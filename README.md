@@ -14,6 +14,30 @@
 let youAreAwesome: boolean;
 youAreAwesome = true;
 ```
+## TypeScript key language features
+### Type annotations 
+Type annotations in TypeScript are a lightweight way to record the intended contract of a function or a variable
+
+### Structural typing
+TypeScript is a structurally-typed language. In structural typing, two elements are considered to be compatible with one another if, for each feature within the type of the first element, a corresponding and identical feature exists within the type of the second element.
+
+### Type inference
+The TypeScript compiler can attempt to infer the type information if no type has been specified. Variables' type can be inferred based on their assigned value and their usage. The type inference takes place when initializing variables and members, setting parameter default values, and determining function return types.
+
+### Type erasure
+TypeScript removes all type system constructs during compilation.
+
+Input:
+```typescript
+let x: SomeType;copy
+```
+
+Output:
+
+```javascript
+let x;
+```
+
 ---
 
 ### What is tsconfig.json file ?
