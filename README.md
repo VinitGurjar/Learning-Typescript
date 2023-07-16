@@ -1,5 +1,11 @@
 # Learning-Typescript
 
+## How to setup a `Typescript` in a project
+
+```
+npm install --save-dev ts-node typescript
+```
+
 ## About Typescript
 - `TypeScript` is a superset of JavaScript that adds types.
   <div align="center"> <img src="https://github.com/VinitGurjar/Learning-Typescript/assets/97173586/0b6e1b33-1996-4e4b-a9d7-a0a79801d1d6"   width="130" height="130"> </div>
