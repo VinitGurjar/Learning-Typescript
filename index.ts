@@ -90,7 +90,12 @@ proclaim();
 proclaim('ready?');
 proclaim('ready!', 3);
 
+//Void Return Type: If there's no return value in function we can just add void typr to it
+function logGreeting(name:string): void{
+  console.log(`Hello, ${name}!`)
+}
 
+/*----------------------------------------------------------------------------------------------------------*/
 // Arrays and Tuples:-
 //Tuple is an array with fixed length and fixed type for each value.
 let arr1: [string, number];
