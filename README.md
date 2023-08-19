@@ -1,6 +1,6 @@
 # Learning-Typescript
 
-## How to setup a `Typescript` in a project
+## How to set up a `Typescript` project
 
 ```
 npm install --save-dev ts-node typescript
@@ -10,7 +10,7 @@ npm install --save-dev ts-node typescript
 - `TypeScript` is a superset of JavaScript that adds types.
   <div align="center"> <img src="https://github.com/VinitGurjar/Learning-Typescript/assets/97173586/0b6e1b33-1996-4e4b-a9d7-a0a79801d1d6"   width="130" height="130"> </div>
 - The type system refers to TypeScript’s understanding of how your code is meant to function: mainly what data types should be stored under your variables.
-- xpects the data type of the variable to match the type of the value initially assigned to it at its declaration—this is known as type inference.
+- expects the data type of the variable to match the type of the value initially assigned to it at its declaration—this is known as type inference.
 - An object’s shape describes, among other things, what properties and methods it does or doesn’t contain. TypeScript knows not only what type something is but also 
    what shape that type has.
 - When it isn’t able to infer a type, TypeScript will consider a variable to be of type any.
@@ -46,11 +46,11 @@ let x;
 
 ---
 
-### What is tsconfig.json file ?
+### What is the tsconfig.json file?
 - Sometimes, you don’t want all the default rules that TypeScript is trying to enforce — and that’s fine. That’s one reason why providing a tsconfig.json file is useful. Additionally, you get perks like telling the TypeScript compiler what files to run on and more.
 
 - The tsconfig.json file is always placed in the root of your project and you can customize what rules you want the TypeScript compiler to enforce. Here’s an 
-eaxmple of tsconfig.json file.
+example of a tsconfig.json file.
 ```json
 {
   "compilerOptions": {
