@@ -87,8 +87,12 @@ function printKeyValue(key: string, value) {
 }
  
 printKeyValue('Courage', 1337); // Prints: Courage: 1337
-printKeyValue('Mood', 'scared'); // Prints: Mood: scared
-```
+
+## Hot take
+
+TypeScript does not allow to define the same variable in many files at a "block-scope", that is, outside functions (or classes):
+
+This is actually not quite true. This rule applies only to files that are treated as **"scripts"**. A file is a script if it does not contain any export or import statements. If a file has those, then the file is treated as a **module**, and the variables do not get defined in the block scope.
 
 
 
