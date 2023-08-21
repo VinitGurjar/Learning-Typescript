@@ -87,6 +87,7 @@ function printKeyValue(key: string, value) {
 }
  
 printKeyValue('Courage', 1337); // Prints: Courage: 1337
+```
 
 ## Hot take
 
